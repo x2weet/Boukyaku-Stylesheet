@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/*
+ * boukyaku.css
+ *
+ *    Spec.: CSS 2.1
+ *   Author: Ryota Wada <x2w@x2w.org>
+ *     Date: Fri Nov 25 05:36:46 2011. (JST)
+ *
+ *  The original style of quotation elements:
+ *    http://members.jcom.home.ne.jp/pctips/www/sample/AtNetHome4th/
+ *
+ */
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+address,
+ul, ol, dl, dt, dd,
+blockquote,
+div {
+	display: block;
+}
+@media screen {
+	li {
+		display: list-item;
+	}
+}
+q,
+dfn, cite,
+em, strong,
+abbr, acronym,
+code, samp, kbd, var,
+a,
+span {
+	display: inline;
+}
+ins, del {
+	/* display: block; */
+}
+/*img,*/
+body object {
+	display: inline;
+}
+hr {
+	display: block;
+}
+tt, i, b, big, small {
+	display: inline;
+}
+pre {
+	display: block;
+}
+table {
+	display: table;
+}
+tr {
+	display: table-row;
+}
+thead {
+	display: table-header-group;
+}
+tbody {
+	display: table-row-group;
+}
+tfoot {
+	display: table-footer-group;
+}
+col {
+	display: table-column;
+}
+colgroup {
+	display: table-column-group;
+}
+td, th {
+	display: table-cell;
+}
+caption {
+	display: table-caption;
+}
+head, link, meta, title, script {
+/*	display: none;*/
+}
+
+
+
+/*
+ * Initialization
+ */
+html, body,
+h1, h2, h3, h4, h5, h6,
+p,
+address,
+ul, ol, dl, dt, dd,
+blockquote,
+div,
+
+li,/**/
+
+q,
+dfn, cite,
+em, strong,
+abbr, acronym,
+code, var, samp, kbd,
+a,
+span,
+
+ins, del,
+
+/*img,*/
+body object,
+
+/*hr,*/
+tt, i, b, big, small,
+
+sub, sup,
+
+pre,
+table, tr, thead, tbody, tfoot, col, colgroup, td, th, caption {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	/*font-stretch: inherit;*/
+	font-variant: inherit;
+	/*font-size-adjust: inherit;*/
+	line-height: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-transform: inherit;
+	text-indent: inherit;
+	white-space: inherit;
+	color: inherit;
+	direction: inherit;
+	quotes: inherit;
+/*	cursor: inherit;*/
+	list-style-type: inherit;/**/
+	list-style-image: inherit;
+	list-style-position: inherit;
+	border-collapse: inherit;
+	border-spacing: inherit;
+	empty-cells: inherit;
+	caption-side: inherit;
+
+	margin: 0;
+	padding: 0;
+	width: auto;
+/*	min-width: 0;*/
+	max-width: none;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	border: 0 solid black;
+	background-color: transparent;
+	background-image: none;
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-attachment: scroll;
+	vertical-align: baseline;
+	text-decoration: none;
+	/*text-shadow: none;*/
+	float: none;
+	clear: none;
+	position: static;
+	top: auto;/**/
+	bottom: auto;
+	left: auto;
+	right: auto;
+/*	overflow: visible;*/
+	clip: auto;
+	visibility: visible;
+	unicode-bidi: normal;
+	counter-increment: none;
+	counter-reset: none;
+	outline-color: invert;
+	outline-width: medium;
+	outline-style: none;
+/*	marker-offset: auto;*/
+	table-layout: auto;
+}
+
+
+
+html {
+	cursor: auto;
+/*	overflow: auto;*/
+	color: black;
+	Background-color: white;
+	direction: ltr;
+/*	font-family: ;*/
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	/*font-stretch: normal;*/
+	font-variant: normal;
+	/*font-size-adjust: none;*/
+	line-height: normal;
+	text-align: center;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0;
+	white-space: normal;
+	quotes: none;
+	list-style-type: disc;/**/
+	list-style-image: none;
+	list-style-position: outside;
+	border-collapse: collapse;
+	border-spacing: 0;/**/
+	empty-cells: show;
+	caption-side: top;
+}
+
+
+
+/*
+ * Block-level elements
+ */
+body {
+	margin: 0 auto;
+	padding: .4em 0;
+	width: 98%;
+/*	overflow: auto;*/
+}
+body {
+	text-align: justify;
+}
+html>body {
+	text-align: left;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	border: 0 solid gray;
+	font-weight: bold;
+	padding: .1em 2%;
+}
+@media screen {
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.2em;
+	}
+}
+h1 {
+	font-size: 200%;
+	margin: 1em 0 .5em 0;
+	padding: .2em 2% .2em 1%;
+	color: black;
+}
+h2 {
+	font-size: 150%;
+	margin: 1.4em 0 .6em 0;
+	padding-left: 7%;
+	border-color: #dcc;
+	border-width: thin 0;
+	background-color: #f3eef3;
+	font-weight: normal;
+}
+h3 {
+    color: gray;
+	font-size: 117%;
+	padding-left: 4%;
+	margin: 1.3em 0 .7em 0;
+	border-width: 0 0 thick 0;
+}
+h4 {
+	font-size: 100%;
+	margin: 1.4em 0 .8em 0;
+	border-width: 0 0 thin 0;
+	border-style: dotted;
+	color: black;
+}
+h5 {
+	font-size: 100%;
+	margin: 2.3em 0 .8em 0;
+	padding-left: 5%;
+}
+h6 {
+	font-size: 100%;
+	margin: 1.7em 0 .7em 0;
+	font-weight: normal;
+	padding-left: 5%;
+}
+h1+h2,
+h2+h3,
+h3+h4,
+h4+h5,
+h5+h6 {
+	margin-top: 0;
+}
+
+
+
+p, address, ul, ol, dl {
+	margin-left: 1em;
+	margin-right: .6em;
+}
+p, address {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	line-height: 1.2em;
+}
+address {
+	margin-left: 0;
+	background-color: #fff;
+	padding: 1em;
+}
+ul, ol, dl {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+	line-height: 1.1em;/**/
+}
+ul, ol {
+	padding-left: 1.6em;
+}
+ul {
+	list-style-type: disc;
+}
+ul ul {
+	list-style-type: circle;
+}
+ol {
+	list-style-type: decimal;
+}
+li {
+	margin: .2em 0;
+}
+dl {
+	padding-left: .8em;
+}
+@media screen {
+	dt, dd {
+		margin: .2em 0;
+	}
+	dd {
+		margin-left: 1.6em;
+		border-width: 0 0 0 medium;
+		border-style: solid;
+		border-color: #f3f3f3;
+		padding-left: .4em;
+	}
+	html>body dd {/**/
+		padding-top: .125em;/**/
+		padding-bottom: .125em;/**/
+	}
+	dd+dt {
+		margin-top: .4em;/**/
+	}
+}
+
+
+
+blockquote {
+	margin: .5em 2em;
+	border-style: dotted;
+	border-width: thin;
+	border-color: #00aa77;
+	padding-left: .9em;/**/
+    padding-right: .9em;
+}
+html>body blockquote {
+	padding-top: 0;/**/
+	padding-bottom: 0;/**/
+}
+
+
+
+li p,
+li ul,
+li ol,
+li dl,
+li address,
+dd p,
+dd ul,
+dd ol,
+dd dl,
+dd address,
+blockquote p,
+blockquote ul,
+blockquote ol,
+blockquote dl,
+blockquote address {
+	margin: .8em 0
+}
+li blockquote,
+dd blockquote,
+blockquote blockquote {
+	margin: .5em 1em;
+}
+
+
+
+/*
+ * Inline-level elements
+ */
+q {
+	color: #00aa77;
+	quotes: "\300C" "\300D";
+}
+q:before {
+	content: open-quote;
+}
+q:after {
+	content: close-quote;
+}
+
+
+
+dfn {
+    font-weight: bold;
+    color: black;
+}
+@media screen {
+	cite {
+		border-color: #00aa77;
+		border-style: dotted;
+		border-width: 0 0 thin 0;
+	}
+}
+
+
+
+em {
+	color: red;
+	font-weight: bolder;
+}
+strong {
+	font-weight: bolder;
+	color: red;
+}
+@media screen {
+	strong {
+		border-width: 0 0 medium 0;/**/
+		border-style: double;
+		border-color: red;/*#bb3366;*/
+	}
+}
+
+
+
+abbr, acronym {
+	border-color: black;
+	border-width: 0 0 thin 0;
+    border-style: dotted;
+}
+/* abbr[title], acronym[title] {} */
+
+
+
+code, samp, kbd {
+	font-family: "LMMono12", monospace;
+}
+code {
+	color: black;
+	background-color: #f0f0f0;
+}
+samp {
+    background-color: #fee;
+    /* font-style: italic; */
+}
+kbd {
+    background-color: #D1E1F6;
+	font-weight: bold;
+}
+@media screen {
+	samp {
+		border-style: dotted;
+		border-color: #cccccc;
+		border-width: 0 0 thin 0;
+	}
+    kbd {
+		border-style: dotted;
+		border-color: navy;
+		border-width: 0 0 thin 0;
+    }
+}
+var {
+	font-style: italic;
+}
+
+
+
+@media screen {
+	a:link {
+		text-decoration: underline;
+	}
+	body a:visited {
+		color: #444444;
+		text-decoration: underline;
+	}
+	body a:active {
+		color: red;
+		text-decoration: underline;
+	}
+}
+
+
+
+h1 * {/**/
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: inherit;
+	color: inherit;
+	quotes: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0 solid black;
+	background-color: transparent;
+	text-decoration: none;
+}
+@media screen {
+	body h1 a:link,
+	body h1 a:visited {
+		background-color: transparent;
+		color: inherit;
+		text-decoration: underline;
+	}
+}
+
+
+
+/*
+ * ``ins'' and ``del''
+ */
+ins {
+	border: thin dotted olive;
+}
+del {
+	text-decoration: line-through;
+}
+
+
+
+/*
+ * ``img'' and ``object''
+ */
+img, object {
+}
+
+
+
+/*
+ * ``hr''
+ */
+hr {/**/
+	margin: 3em 0;
+}
+tt {
+	font-family: "LMMono12", monospace;
+}
+i {
+	font-style: italic;
+}
+b {
+	font-weight: bold;
+}
+big {
+	font-size: 117%;
+}
+small {
+	font-size: 83%;
+}
+
+
+
+/*
+ * ``sub'' and ``sup''
+ */
+sub {
+	font-size: smaller;
+	vertical-align: sub;
+}
+sup {
+	font-size: smaller;
+	vertical-align: super;
+}
+
+
+
+/*
+ * ``pre'' and table elements
+ */
+pre, table {
+	margin: 1em;
+}
+pre {
+	font-family: "LMMono12", monospace;
+	white-space: pre;
+	border: thin solid silver;
+	background-color: #f4f4f4;
+	padding: .3em;
+}
+@media screen {
+	table {
+		background-color: white;
+		border-collapse: collapse;
+		border-width: medium 0;
+        border-style: solid;
+        border-color: black;
+		border-spacing: 0;
+	}
+	th, td {
+	border-style: solid;
+	border-color: silver;
+		border-width: thin 0;
+		padding: .3em;
+	}
+	thead > tr > th {
+		background-color: #eee;
+	}
+	tfoot > tr > th {
+		background-color: #eee;
+	}
+	caption {
+		padding: .7em;
+	}
+    caption:before {
+        content: "\8868: ";
+    }
+}
+
+
+
+/*
+ * For Windows IE
+ */
+@media screen {
+	address {
+		font-style: normal;
+	}
+	html>body address {
+		font-style: inherit;
+	}
+	dfn, cite {
+		font-style: normal;
+	}
+	html>body dfn,
+	html>body cite {
+		font-style: inherit;
+	}
+	em {
+		font-style: normal;
+	}
+	html>body em {
+		font-style: inherit;
+	}
+	a {
+		color: black;/**/
+	}
+	html>body a {
+		color: inherit;
+	}
+}
+
+
+
+/*
+ * Classes for multi-column layout
+ */
+.box {
+	width: 24%;
+	text-align: left;
+	float: left;
+}
+.border {
+	clear: both;
+}
+
+/* EOF */
