@@ -10,6 +10,7 @@
 
 HTML 4.01 Strict DTDに妥当な文書に適用する場合、例えばこの様に:
     <link rel="stylesheet" type="text/css" href="boukyaku.css">
+    
 
 ## その他関連規格等
 
