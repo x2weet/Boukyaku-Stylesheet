@@ -4,7 +4,7 @@
  *
  *    Spec.: CSS 2.1
  *   Author: Ryota Wada <x2w@x2w.org>
- *     Date: Sun Feb  5 08:44:33 2012. (JST)
+ *     Date: Mon Mar 12 11:48:36 2012. (JST)
  *
  *  The original style of quotation elements:
  *    http://members.jcom.home.ne.jp/pctips/www/sample/AtNetHome4th/
@@ -42,7 +42,7 @@ body object {
 	display: inline;
 }
 hr {
-	display: block;
+	display: none;
 }
 tt, i, b, big, small {
 	display: inline;
@@ -267,10 +267,10 @@ h3 {
 h4 {
 	font-size: 100%;
 	margin: 1.4em 0 .8em 0;
-	border-width: 0 0 thin 0;
+	border-width: 0 0 thin 0;/* @@@@@@@@@@@@@@@@@@@@@@@@@ 2012-01-12 */
 	border-style: dotted;
-	color: black;
     border-color: black;
+	color: black;
 }
 h5 {
 	font-size: 100%;
@@ -294,7 +294,7 @@ h5+h6 {
 
 
 p, address, ul, ol, dl {
-	margin-left: 1em;
+	margin-left: 4em;/* 1+3em */
 	margin-right: .6em;
 }
 p, address {
@@ -354,6 +354,7 @@ dl {
 
 blockquote {
 	margin: .5em 2em;
+    margin-left: 5em;/* 2+3em */
 	border-style: dotted;
 	border-width: thin;
 	border-color: #00aa77;
@@ -587,6 +588,7 @@ sup {
  */
 pre, table {
 	margin: 1em;
+    margin-left: 4em;/* 1+3em */
 }
 pre {
 	font-family: "LMMono12", monospace;
