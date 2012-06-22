@@ -4,7 +4,7 @@
  *
  *    Spec.: CSS 2.1
  *   Author: Ryota Wada <x2w@x2w.org>
- *     Date: Sun Feb  5 08:44:33 2012. (JST)
+ *     Date: 2012-06-22T09:26:16+09:00.
  *
  *  The original style of quotation elements:
  *    http://members.jcom.home.ne.jp/pctips/www/sample/AtNetHome4th/
@@ -450,7 +450,7 @@ abbr, acronym {
 
 
 code, samp, kbd {
-	font-family: "LMMono12", monospace;
+	font-family: "LMMono12", "LMMono10", monospace;
 }
 code {
 	color: black;
