@@ -4,7 +4,7 @@
  *
  *    Spec.: CSS 2.1
  *   Author: Ryota Wada <x2w@x2w.org>
- *     Date: 2012-06-22T09:26:16+09:00.
+ *     Date: 2012-06-27T08:18:18+09:00.
  *
  *  The original style of quotation elements:
  *    http://members.jcom.home.ne.jp/pctips/www/sample/AtNetHome4th/
@@ -551,7 +551,7 @@ hr {/**/
 	margin: 3em 0;
 }
 tt {
-	font-family: "LMMono12", monospace;
+	font-family: "LMMono12", "LMMono10", monospace;
 }
 i {
 	font-style: italic;
@@ -589,7 +589,7 @@ pre, table {
 	margin: 1em;
 }
 pre {
-	font-family: "LMMono12", monospace;
+	font-family: "LMMono12", "LMMono10", monospace;
 	white-space: pre;
 	border: thin solid silver;
 	background-color: #f4f4f4;
