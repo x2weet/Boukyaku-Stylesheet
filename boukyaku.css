@@ -4,7 +4,7 @@
  *
  *    Spec.: CSS 2.1
  *   Author: Ryota Wada <x2w@x2w.org>
- *     Date: 2012-06-27T08:18:18+09:00.
+ *     Date: 2012-07-14T07:12:36+09:00.
  *
  *  The original style of quotation elements:
  *    http://members.jcom.home.ne.jp/pctips/www/sample/AtNetHome4th/
@@ -187,7 +187,7 @@ html {
 	color: black;
 	Background-color: white;
 	direction: ltr;
-/*	font-family: ;*/
+	font-family: "IPA Pゴシック", "ＭＳ Ｐゴシック", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 100%;
